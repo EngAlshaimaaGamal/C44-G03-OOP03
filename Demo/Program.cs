@@ -27,6 +27,26 @@
 
             #endregion
 
+            #region Example 02
+
+            //Car C2 = new Car(5);
+            //Console.WriteLine(C2);
+            //Console.WriteLine("==================");
+
+            //Car C3 = new Car(5, "BMW");
+            //Console.WriteLine(C3);
+            //Console.WriteLine("==================");
+
+
+            //Car C4 = new Car(5, "BM", 300);
+            //Console.WriteLine(C4);  
+
+
+
+
+
+            #endregion
+
 
 
         }

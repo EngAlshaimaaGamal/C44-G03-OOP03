@@ -39,7 +39,7 @@ namespace Demo
         {
             get { return speed; }
             set { speed = value; }
-        }   
+        }
 
 
 
@@ -47,11 +47,35 @@ namespace Demo
 
 
         #region Constructor
+
+
+        // N longer overloaading the constructor    (Constructor OverLoading)
         public Car(int id, string? model, int speed)
         {
             this.id = id;
             this.model = model;
             this.speed = speed;
+
+            Console.WriteLine("Constructor 1.");
+
+        }
+
+        public Car(int id, string? model) : this(id ,model , 190) //constructor chain (Call constructore from anthor constructor)
+        {
+            //this.id = id;
+            //this.model = model;
+            //this.speed = 190;
+            Console.WriteLine("Constructor 2.");
+
+        }
+
+        public Car(int id) : this (id , "tota" , 250)
+        {
+            //this.id = id;
+            //this.model = "tota";
+            //this.speed = 250;
+
+            Console.WriteLine("Constructor 3.");    
         }
 
 
